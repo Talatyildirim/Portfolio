@@ -1,0 +1,34 @@
+.container-impressum {
+  color: white;
+  width: 100vw;
+  background-color: rgb(20, 29, 47);
+}
+.impressum {
+  padding-left: 100px;
+  padding-top: 150px;
+
+  h1 {
+    color: white;
+  }
+}
+
+.dataProtection {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+  .impressum {
+    padding-left: 37px;
+    padding-right: 37px;
+    h1 {
+      color: white;
+    }
+  }
+
+  .dataProtection {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+}

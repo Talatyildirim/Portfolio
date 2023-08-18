@@ -1,0 +1,60 @@
+<div id="contact" class="container-contactarea">
+  <div class="header-contactarea">
+    <div class="blue-line"></div>
+    <h2>Kontakt</h2>
+  </div>
+
+  <div class="contactarea">
+    <div class="textarea">
+      <h3>Haben Sie ein Problem das ich lösen kann?</h3>
+      <span>
+        Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, Ihnen zuzuhören,
+        Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.
+      </span>
+      <span> <br /><br />Brauchen Sie einen Frontend-Entwickler? <b>Kontaktieren Sie mich!</b> </span>
+    </div>
+
+    <div class="container-form">
+      <form id="myForm" (submit)="sendMail()" ngNativeValidate #myForm>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Ihr Name"
+          onfocus="this.placeholder=''"
+          #nameField
+          required
+        />
+        <span class="error-message-name">Ihre Name ist leer</span>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Ihre E-Mail"
+          onfocus="this.placeholder=''"
+          #emailField
+          required
+        />
+        <span class="error-message-email">Ihre E-mail ist leer</span>
+        <textarea
+          name="message"
+          placeholder="Ihre Nachricht"
+          onfocus="this.placeholder=''"
+          id="text"
+          #textField
+          required
+        ></textarea>
+        <span id="text" class="error-message-text">Ihre Nachricht ist leer</span>
+        <div class="button-container">
+          <button #button class="main-button">Nachricht senden :)</button>
+        </div>
+        <span id="successful" class="succesfull-message opacity-0"
+          >Ihre E-Mail wurde erfolgreich gesendet!</span
+        >
+      </form>
+    </div>
+  </div>
+  <a routerLink="" style="display: grid">
+    <img class="go-up" src="./assets/img/go-up-button.png" />
+  </a>
+</div>
